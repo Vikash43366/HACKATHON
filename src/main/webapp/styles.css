@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 30%, rgba(78,29,253,1) 100%, rgba(252,176,69,1) 100%);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+
+
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+/* login resister*/
+
+.b {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.switch {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.switch-b {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.switch-b.active {
+    background-color: #eca2afb7;
+    border-bottom: 2px solid #082ff1;
+    color: #af4ca0;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.i {
+    margin-bottom: 15px;
+}
+
+.i label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.i input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+
+.but {
+    width: 100%;
+    padding: 10px;
+    background-color: #f34b0e;
+    color: rgb(241, 241, 242);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.but:hover {
+    background-color: #a06945;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.sli {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.imageslide {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden; 
+    border: 1px solid brown;
+}
+
+.slides {
+    display: flex;
+    animation: slide 12s infinite; 
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }   
+    25% { transform: translateX(-100%); } 
+    45% { transform: translateX(-100%); } 
+    50% { transform: translateX(-200%); } 
+    70% { transform: translateX(-200%); } 
+    75% { transform: translateX(-300%); } 
+    95% { transform: translateX(-300%); }  
+    100% { transform: translateX(0); }
+
+}
+
+
+
+
